@@ -11,7 +11,6 @@ const personSchema = new mongoose.Schema({
   age: Number,
   favoriteFoods: [String],
 });
-
 const Person = mongoose.model("Person", personSchema);
 
 const createAndSavePerson = (done) => {
